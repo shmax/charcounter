@@ -1,0 +1,20 @@
+{
+  "name": "charcounter",
+  "version": "0.1.0",
+  "authors": [
+    "Nuxia <contact@nuxia.fr>"
+  ],
+  "description": "Character counter jQuery plugin",
+  "main": "js/charcounter.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~1.11"
+  }
+}

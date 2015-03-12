@@ -1,0 +1,10 @@
+.charcounter-container {
+    font-size: 0.8em;
+    display: block;
+}
+.charcounter-container-warning {
+    color: #ff8000;
+}
+.charcounter-container-danger {
+    color: #FF0000;
+}
