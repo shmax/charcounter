@@ -4,6 +4,7 @@
 
 ### Installation
 
+    $ bower install charcounter
 * Import jQuery
 * Import js/charcounter.js
 * Import all the js/locales/charcounter_locale_*.js you need
