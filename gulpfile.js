@@ -4,14 +4,15 @@ var path = require('path');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
+var jshint = require('gulp-jshint');
 
 var globs = {
     js: [path.join(__dirname, '/src/**/*.js')],
     css: [path.join(__dirname, '/src/**/*.css')]
 };
 
-gulp.task('default', function () {
-    gutil.log('Compiling..');
+gulp.task('dist', function () {
+    gutil.log('Building dist...');
 
     gulp.src(globs.js)
         .pipe(gulp.dest('dist'))
@@ -28,4 +29,10 @@ gulp.task('default', function () {
         }))
         .pipe(minifyCSS())
         .pipe(gulp.dest('dist'));
+});
+
+gulp.task('lint', function() {
+    return gulp.src(globs.js)
+        .pipe(jshint())
+        .pipe(jshint.reporter('default'));
 });

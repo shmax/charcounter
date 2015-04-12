@@ -60,7 +60,7 @@
         countdown: function (translator, count, max, warning) {
             count = max - count;
             count = count < 0 ? 0 : count;
-            return translator.countdown(count, count > 1)
+            return translator.countdown(count, count > 1);
         },
 
         count: function (translator, count, max, warning) {
@@ -84,9 +84,9 @@
         }
     };
 
-    $.fn.CharCounter.locales = [];
+    $.fn.CharCounter.locales = {};
 
-    $.fn.CharCounter.locales['en'] = {
+    $.fn.CharCounter.locales.en = {
         countdown: function (count, plural) { return count + ' character' + (plural ? 's' : '') + ' remaining'; },
         count: function (count, plural) { return count + ' character' + (plural ? 's' : ''); },
         countOnMax: function (count, plural, max) { return this.count(count, plural) + ' / ' + max; },
