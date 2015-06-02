@@ -1,6 +1,6 @@
 (function ($) {
 
-    $.fn.CharCounter.locales['fr'] = {
+    $.fn.CharCounter.locales.fr = {
         countdown: function (count, plural) { return count + ' caractère' + (plural ? 's' : '') + ' restant' + (plural ? 's' : ''); },
         count: function (count, plural) { return count + ' caractère' + (plural ? 's' : ''); },
         countOnMax: function (count, plural, max) { return this.count(count, plural) + ' / ' + max; },

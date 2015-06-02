@@ -1,18 +1,21 @@
 {
   "name": "charcounter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "authors": [
     "Nuxia <dev@nuxia.fr>"
   ],
   "description": "Character counter jQuery plugin",
-  "main": "js/charcounter.js",
+  "main": "dist/js/charcounter.js",
   "license": "MIT",
   "ignore": [
     "**/.*",
+    "src",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "gulpfile.js",
+    "package.json"
   ],
   "dependencies": {
     "jquery": "~1.11"
