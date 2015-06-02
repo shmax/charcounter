@@ -2,7 +2,7 @@
   "name": "charcounter",
   "version": "1.0.0",
   "authors": [
-    "Nuxia <contact@nuxia.fr>"
+    "Nuxia <dev@nuxia.fr>"
   ],
   "description": "Character counter jQuery plugin",
   "main": "js/charcounter.js",
